@@ -1,0 +1,31 @@
+.patient-card {
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 20px;
+  }
+  .patient-data__container {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: block;
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+  .patient-data__container h3 {
+    background-color: grey;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 5px;
+    width: 40%;
+  }
+  .patient-data__container p {
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+  }

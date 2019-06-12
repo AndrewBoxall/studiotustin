@@ -1,0 +1,19 @@
+#schedule-new-appt {
+    background-color: white;
+    border: 1px solid grey;
+    float: right;
+    margin: 0 20px;
+    width: 300px;
+  }
+  #schedule-new-appt label {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 40%;
+  }
+  #schedule-new-appt select {
+    display: inline-block;
+    font-size: 14px;
+    width: 40%;
+  }

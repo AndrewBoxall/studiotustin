@@ -1,0 +1,37 @@
+<form id="schedule-new-appt" onSubmit={this.addAppointment}>
+  <div>
+    <label htmlFor="appointmentType">Appointment Type: </label>
+    <select value={this.state.appointmentType} name="appointmentType" onChange={this.updateField}>
+      <option value="Pilates">Pilates</option>
+      <option value="Massage">Massage</option>
+      <option value="Chiropractic">Chiropractic</option>
+    </select>
+  </div>
+  <div>
+    <label htmlFor="appointmentInstructor">Instructor: </label>
+    <select value={this.state.appointmentInstructor} name="appointmentInstructor" onChange={this.updateField}>
+      <option value="Cassandra">Cassandra</option>
+      <option value="Amy">Amy</option>
+      <option value="Amy">Greg</option>
+    </select>
+  </div>
+  <div>
+    <label htmlFor="appointmentPatient">Patient: </label>
+    <select value={this.state.appointmentPatient} name="appointmentPatient" onChange={this.updateField}>
+      <option value="Andrew">Andrew</option>
+      <option value="Mike">Mike</option>
+      <option value="Bob">Bob</option>
+      <option value="New">New Patient</option>
+    </select>
+  </div>
+  <div>
+    <label htmlFor="appointmentTime">Time slot: </label>
+    <select value={this.state.appointmentTime} name="appointmentTime" onChange={this.updateField}>
+      <option value="1pm">1pm</option>
+      <option value="2pm">2pm</option>
+      <option value="3pm">3pm</option>
+      <option value="4pm">4pm</option>
+    </select>
+  </div>
+  <button type="submit">Add to schedule</button>
+</form>
