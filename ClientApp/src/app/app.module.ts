@@ -4,34 +4,36 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+import { DashboardPageModule } from './pages/dashboard-page/dashboard-page.module';
+import { LoginPageModule } from './pages/login-page/login-page.module';
+import { PatientPageModule } from './pages/patient-page/patient-page.module';
+import { SchedulePageModule } from './pages/schedule-page/schedule-page.module';
+import { UserPageModule } from './pages/user-page/user-page.module';
+
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './components/navigation/nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { LoginPageComponent } from './components/login/login-page.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent,
-    HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
-    DashboardComponent,
-    LoginPageComponent
+    NavMenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    DashboardPageModule,
+    LoginPageModule,
+    PatientPageModule,
+    SchedulePageModule,
+    UserPageModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
+      { path: '', component: LoginPageComponent, pathMatch: 'full' },
       { path: 'login', component: LoginPageComponent },
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'dashboard', component: DashboardPageComponent }
     ])
   ],
   providers: [],

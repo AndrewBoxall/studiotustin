@@ -1,0 +1,35 @@
+<div id="login-page">
+  <img 
+  class="carousel-background" 
+  src="assets/img/studio-banner.jpg" 
+  alt="background header carousel"
+  >
+  <form id="login-form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <div class="login-input-container">
+      
+      <input 
+        name="loginUsername" 
+        type="text" 
+        aria-label="Login username" 
+        placeholder="Username" 
+        required 
+        [(ngModel)]="loginUsername"
+        #spy
+      />
+      
+    </div>
+    <div class="login-input-container">
+      
+      <input 
+        name="loginPword" 
+        type="password" 
+        aria-label="Login password" 
+        placeholder="Password" 
+        required
+        [(ngModel)]="loginPword"
+      />
+
+    </div>
+    <button type="submit" class="login-button" [disabled]="!loginForm.form.valid">Login</button>
+  </form>
+</div>
