@@ -12,14 +12,18 @@ import { UserPageModule } from './pages/user-page/user-page.module';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './components/navigation/nav-menu/nav-menu.component';
-
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { CounterComponent } from './counter/counter.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    FetchDataComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
