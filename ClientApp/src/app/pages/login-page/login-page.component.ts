@@ -20,7 +20,7 @@ export class LoginPageComponent {
     this.isExpanded = !this.isExpanded;
   }
 
-  onSubmit() { this.submitted = true;}
+  onSubmit(loginForm) { this.submitted = true;}
 
   updateField(e) {
 		//this.setState({[e.target.name]: e.target.value});
